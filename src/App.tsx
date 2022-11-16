@@ -1,15 +1,15 @@
 import React from "react";
 import "./App.css";
-import Button from "./components/Button";
+import ContainerSimulation from "./components/ContainerSimulation";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <Button/>
-      </header>
-    </div>
-  );
+    return (
+        <div className="App">
+            <header className="App-header">
+                <ContainerSimulation></ContainerSimulation>
+            </header>
+        </div>
+    );
 }
 
 export default App;

@@ -1,16 +1,17 @@
-import { ButtonHTMLAttributes } from "react";
-import { ThemeButton } from "./style";
+import {ButtonHTMLAttributes} from "react";
+import {ThemeButton} from "./style";
 
-interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {}
+interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
+    title: string;
+}
 
-const Button = ({ ...rest }: ButtonProps) => {
-  return (
-    <div>
-      <ThemeButton {...rest}>
-        SIMULE SUA ANTECIPAÇÃO
-      </ThemeButton>
-    </div>
-  );
+const Button = ({title, ...rest}: ButtonProps) => {
+    return (
+        <div>
+            <ThemeButton {...rest}>{title}</ThemeButton>
+            <div></div>
+        </div>
+    );
 };
 
 export default Button;
