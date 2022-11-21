@@ -21,7 +21,7 @@ export const ThemeSimulation = styled.div`
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
 
-    p{
+    p {
         color: black;
         font-weight: 700;
         margin-bottom: 80px;
@@ -39,9 +39,48 @@ export const ThemeSimulation = styled.div`
 `;
 
 export const ThemeResults = styled.div`
+    display: flex;
+    flex-direction: column;
+
     width: 40%;
     height: 100%;
+
     background-color: var(--color2);
+
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
+
+    p {
+        margin: 70px 0 10px 0;
+        color: black;
+        font-style: italic;
+        font-weight: 600;
+    }
+
+    hr {
+        text-align: center;
+
+        margin: 0 auto;
+
+        width: 60%;
+        height: 2px;
+        border-radius: 15px;
+
+        background-color: var(--color4);
+
+        border: none;
+    }
+
+    div {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        padding-left: 50px;
+        margin: 50px 0 50px 0;
+
+        span {
+            margin: 30px 0 30px 0;
+        }
+    }
 `;

@@ -1,5 +1,5 @@
-import {InputHTMLAttributes} from "react";
 import {ThemeInput} from "./style";
+import {InputHTMLAttributes} from "react";
 
 interface InputProps extends InputHTMLAttributes<HTMLInputElement> {}
 
