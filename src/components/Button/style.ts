@@ -16,4 +16,8 @@ export const ThemeButton = styled.button`
     border-radius: 8px;
 
     margin-top: 60px;
+
+    :hover {
+        border: 3px solid white;
+    }
 `;
